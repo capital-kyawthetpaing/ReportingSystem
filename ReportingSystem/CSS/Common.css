@@ -1,0 +1,164 @@
+﻿table thead{
+    text-align:center;
+}
+
+/*table td{
+    padding:0 5px !important;
+    text-align:center;
+}*/
+
+.reducepadding td{
+    padding: 3px 5px !important;
+}
+
+.gridbtn{
+    padding: 5px;
+    width:30px;
+    margin-left:2px;
+}
+
+.required {
+    color: red;
+}
+
+.align-right{
+    text-align: right;
+}
+
+.qty {
+    text-align: right;
+}
+
+.align-center{
+    text-align:center;
+}
+
+.LoseBalance {
+    font-weight: bold;
+    color: red;
+}
+
+.WinBalance{
+    font-weight:bold;
+    color:green;
+}
+
+.pjmsbtn {
+    background-color: lightcyan;
+    border: 1px solid gray;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-right:5px;
+}
+.btnView{
+    width: 140px !important;
+}
+.pjmscancelbtn {
+    background-color: red !important;
+    color: white;
+    border: 1px solid gray;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.pjmscancelbtn1 {
+    background-color: #3399CC !important;
+    color: white;
+    border: 1px solid gray;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+    #basic-addon1 i{
+    font-size: 15px;
+    color: black;
+}
+
+
+    /*#btnCancel {
+    background-color: lightcoral;
+    font-size: 18px;
+    color: blue;
+    margin-top: 5px;
+}*/
+    /*iziMoal*/
+    /*#btncancel,#btnadd {
+    margin-top: 10px;
+    font-size: 16px;
+    margin-left: 55px;
+}*/
+
+
+.div-centerbtn{
+    display:flex;
+    justify-content:center;
+}
+
+
+#selectedProjectDetail tr{
+    text-align: center;
+}
+
+#txtContractDate{
+    text-align: center;
+}
+@media screen and (max-width: 1024px) {
+    #btnSave, #btnUpdate {
+       margin:5px;
+    }
+}
+/*@media screen and (min-width: 280px) {
+    #selectedProjectDetail tr th{
+      width: 20%;
+    }
+}*/
+
+.media .media-heading{
+    margin-bottom:0;
+}
+
+.profileRow{
+    margin-bottom:15px;
+}
+
+.media-heading{
+    margin-bottom:0;
+}
+
+.staff-info{
+    margin-left : 10px;
+}
+
+.rdo1{
+    margin-top:3px;
+    margin-right:3px;
+}
+
+.big-checkbox {
+    width: 30px;
+    height: 18px;
+    margin-top:3px;
+}
+
+.table td, .table th{
+    vertical-align : middle;
+}
+table#tblEmployee1 tbody tr {
+    height: 10px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.input-group-text {
+    background-color: lightcyan;
+}
+th, td {
+    white-space: nowrap;
+}
+/*div.dataTables_wrapper div.dataTables_scrollBody {
+    min-height: 10px;
+}*/
+/*#tblEmployee1 tbody td {
+    max-height: 10px;
+}*/
+
