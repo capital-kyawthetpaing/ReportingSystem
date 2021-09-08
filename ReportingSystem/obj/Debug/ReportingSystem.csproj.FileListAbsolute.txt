@@ -53,6 +53,7 @@ D:\MyData\ReportingSystem\ReportingSystem\bin\roslyn\VBCSCompiler.exe.config
 D:\MyData\ReportingSystem\ReportingSystem\bin\Antlr3.Runtime.dll
 D:\MyData\ReportingSystem\ReportingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\MyData\ReportingSystem\ReportingSystem\bin\Microsoft.Web.Infrastructure.dll
+D:\MyData\ReportingSystem\ReportingSystem\bin\Models.dll
 D:\MyData\ReportingSystem\ReportingSystem\bin\Newtonsoft.Json.dll
 D:\MyData\ReportingSystem\ReportingSystem\bin\System.Net.Http.Formatting.dll
 D:\MyData\ReportingSystem\ReportingSystem\bin\System.Web.Helpers.dll
@@ -65,7 +66,7 @@ D:\MyData\ReportingSystem\ReportingSystem\bin\System.Web.WebPages.Deployment.dll
 D:\MyData\ReportingSystem\ReportingSystem\bin\System.Web.WebPages.dll
 D:\MyData\ReportingSystem\ReportingSystem\bin\System.Web.WebPages.Razor.dll
 D:\MyData\ReportingSystem\ReportingSystem\bin\WebGrease.dll
-D:\MyData\ReportingSystem\ReportingSystem\bin\Newtonsoft.Json.xml
+D:\MyData\ReportingSystem\ReportingSystem\bin\Models.pdb
 D:\MyData\ReportingSystem\ReportingSystem\bin\System.Net.Http.Formatting.xml
 D:\MyData\ReportingSystem\ReportingSystem\bin\System.Web.Helpers.xml
 D:\MyData\ReportingSystem\ReportingSystem\bin\System.Web.Http.xml

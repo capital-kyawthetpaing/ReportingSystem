@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Report System [@ViewBag.Title]</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link rel="icon" href=@Url.Content("~/SystemImages/CK.ico") />
+    <link href="@Url.Content("~/Css/app.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Css/ionicons.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Css/dataTables.bootstrap4.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Css/responsive.bootstrap4.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Css/buttons.bootstrap4.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Css/sweetalert2.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Css/Common.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Css/bootstrap-datepicker.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Css/bootstrap-datepicker3.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Css/bootstrap-datetimepicker.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Css/iziModal.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Css/iziModal.min.css")" rel="stylesheet" />
+    @*@{
+
+        string ID = string.Empty;
+        string Name = string.Empty;
+        string obj = string.Empty;
+        if (Session["UserInfo"] != null)
+        {
+            obj = Session["UserInfo"].ToString();
+            ID = obj.Split('_')[0];
+            Name = obj.Split('_')[1];
+        }
+        else
+        {
+            Response.Redirect(Url.Content("~/Home/Login"));
+        }
+    }*@
+</head>
+<body>
+    <div id="page-container" class="page-container fade">
+        <div id="header" class="header navbar-default" style="position:fixed;">
+            <div class="navbar-header">
+                <a href="@Url.Action("ProjectList","Project")" class="navbar-brand viewBack">
+                    <img style="margin-right:5px" src="@Url.Content("~/SystemImages/CK.JPG")" />
+                    <b class="mr-1">プロジェクト管理システム</b>
+                </a>
+                <button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+        <div id="sidebar" class="sidebar" style="padding-top:50px; position: fixed;">
+        </div>
+        <div class="sidebar-bg"></div>
+        <div id="content" class="content" style="padding-top:70px;">
+            @RenderBody()
+        </div>
+    </div>
+
+    <script src="@Url.Content("~/JS/app.min.js")"></script>
+    <script src="@Url.Content("~/JS/apple.min.js")"></script>
+    <script src="@Url.Content("~/JS/jquery.dataTables.min.js")"></script>
+    <script src="@Url.Content("~/JS/dataTables.bootstrap4.min.js")"></script>
+    <script src="@Url.Content("~/JS/dataTables.responsive.min.js")"></script>
+    <script src="@Url.Content("~/JS/responsive.bootstrap4.min.js")"></script>
+    <script src="@Url.Content("~/JS/dataTables.buttons.min.js")"></script>
+    <script src="@Url.Content("~/JS/buttons.bootstrap4.min.js")"></script>
+    <script src="@Url.Content("~/JS/buttons.colVis.min.js")"></script>
+    <script src="@Url.Content("~/JS/buttons.flash.min.js")"></script>
+    <script src="@Url.Content("~/JS/buttons.html5.min.js")"></script>
+    <script src="@Url.Content("~/JS/buttons.print.min.js")"></script>
+    <script src="@Url.Content("~/JS/pdfmake.min.js")"></script>
+    <script src="@Url.Content("~/JS/vfs_fonts.js")"></script>
+    <script src="@Url.Content("~/JS/jszip.min.js")"></script>
+    <script src="@Url.Content("~/JS/table-manage-buttons.demo.js")"></script>
+    <script src="@Url.Content("~/JS/sweetalert2.min.js")"></script>
+    <script src="@Url.Content("~/JS/Common.js")"></script>
+    <script src="@Url.Content("~/JS/ErrorCheck.js")"></script>
+    <script src="@Url.Content("~/JS/bootstrap-datepicker.js")"></script>
+    <script src="@Url.Content("~/JS/bootstrap-datepicker.js")"></script>
+    @*eonasdan-bootstrap-datetimepicker*@
+    <script src="@Url.Content("~/JS/moment.min.js")"></script>
+    <script src="@Url.Content("~/JS/bootstrap-datetimepicker.min.js")"></script>
+    @*cleave number format*@
+    <script src="@Url.Content("~/JS/cleave.min.js")"></script>
+    <script src="@Url.Content("~/JS/iziModal.min.js")"></script>
+    <script src="@Url.Content("~/JS/iziModal.js")"></script>
+
+    @*angular js*@
+    <script src="@Url.Content("~/Scripts/angular.js")"></script>
+    <script src="@Url.Content("~/Scripts/angular.min.js")"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,5 @@
+D:\MyData\ReportingSystem\Models\bin\Debug\Models.dll
+D:\MyData\ReportingSystem\Models\bin\Debug\Models.pdb
+D:\MyData\ReportingSystem\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\MyData\ReportingSystem\Models\obj\Debug\Models.dll
+D:\MyData\ReportingSystem\Models\obj\Debug\Models.pdb
